@@ -64,7 +64,7 @@ function CountdownCards({ expiryTimestamp }) {
 
       {/* [Countdown status] */}
       <div className={styles.countdownStatus}>
-        {isRunning ? "Countdown Running" : "countdown Not running"}
+        {isRunning ? "Countdown Running" : "Countdown Not running"}
       </div>
 
       {/* [Options buttons] */}
