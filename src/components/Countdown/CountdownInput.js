@@ -7,7 +7,7 @@ import CountDownValue from "./CountDownValue";
 
 const useStyles = makeStyles(CountdownStyle);
 
-const CountdownInput = () => {
+const CountdownInput = ({ isCardsVisible }) => {
   const styles = useStyles();
 
   //   [States]
@@ -33,6 +33,7 @@ const CountdownInput = () => {
           onChange={(e) => {
             setHoursInput(e.target.value);
             setButtonClicked(false);
+            isCardsVisible(false);
           }}
           size="small"
           className={styles.textField}
@@ -56,6 +57,7 @@ const CountdownInput = () => {
           onChange={(e) => {
             setMinutesInput(e.target.value);
             setButtonClicked(false);
+            isCardsVisible(false);
           }}
           size="small"
           className={styles.textField}
@@ -79,6 +81,7 @@ const CountdownInput = () => {
           onChange={(e) => {
             setSecondsInput(e.target.value);
             setButtonClicked(false);
+            isCardsVisible(false);
           }}
           size="small"
           className={styles.textField}
@@ -99,6 +102,7 @@ const CountdownInput = () => {
           onClick={() => {
             if (hoursInput > 0 || minutesInput > 0 || secondsInput > 0) {
               setButtonClicked(true);
+              isCardsVisible(true);
               setGetTimeInSeconds(
                 hoursInput * 60 * 60 + minutesInput * 60 + secondsInput * 1
               );

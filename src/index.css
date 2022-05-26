@@ -21,3 +21,43 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px rgba(44, 44, 49, 1) inset !important;
   -webkit-text-fill-color: #ffffff !important;
 }
+
+/* -------------FooterLinks------------- */
+.footerLink {
+  background: linear-gradient(currentColor 0 0) var(--p, 0) 100% / var(--d, 0)
+    2px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+  font-size: 1rem;
+  line-height: 150%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+}
+.footerLink:hover {
+  --d: 100%;
+  --p: 100%;
+  color: rgba(239, 54, 54, 1);
+}
+
+.emailLink {
+  background: linear-gradient(currentColor 0 0) var(--p, 0) 100% / var(--d, 0)
+    1px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+  font-size: 1rem;
+  line-height: 150%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+}
+.emailLink:hover {
+  --d: 100%;
+  --p: 100%;
+  color: rgba(239, 54, 54, 1);
+}
