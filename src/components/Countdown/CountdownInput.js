@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import { makeStyles } from "@material-ui/core";
 import Button from "@mui/material/Button";
 import CountdownStyle from "./CountdownStyle";
+import CountDownValue from "./CountDownValue";
 
 const useStyles = makeStyles(CountdownStyle);
 
@@ -113,6 +114,10 @@ const CountdownInput = () => {
           Start Countdown
         </Button>
       </div>
+
+      {getTimeInSeconds !== 0 && buttonClicked && (
+        <CountDownValue seconds={getTimeInSeconds} />
+      )}
     </div>
   );
 };
