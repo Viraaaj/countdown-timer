@@ -49,7 +49,12 @@ const Footer = () => {
               key={index}
               style={{ textAlign: "center" }}
             >
-              <a href={item.link} target="_blank" className="footerLink">
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="footerLink"
+              >
                 {item.name}
               </a>
             </Grid>
