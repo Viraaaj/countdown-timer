@@ -9,9 +9,17 @@ function App() {
         justifyContent: "space-between",
         height: "100vh",
         backgroundColor: "rgb(33, 36, 38)",
+        padding: "0 16px",
       }}
     >
-      <CountdownInput />
+      <div
+        style={{
+          maxWidth: 1120,
+          margin: "0 auto",
+        }}
+      >
+        <CountdownInput />
+      </div>
     </div>
   );
 }

@@ -19,8 +19,6 @@ const CountdownInput = () => {
 
   const [buttonClicked, setButtonClicked] = useState(false);
 
-  console.log("getTimeInSeconds: ", getTimeInSeconds);
-
   return (
     <div className={styles.container}>
       <h1 className={styles.titleText}>It is now time for the countdown!</h1>
@@ -108,10 +106,10 @@ const CountdownInput = () => {
               alert("Please enter a valid number!");
             }
           }}
-          className={styles.countdownStartButton}
+          className={styles.countdownShowButton}
           variant="contained"
         >
-          Start Countdown
+          Show Countdown
         </Button>
       </div>
 
