@@ -1,7 +1,17 @@
+import CountdownInput from "./components/Countdown/CountdownInput";
+
 function App() {
   return (
-    <div>
-      <h1>It is now time for the countdown!</h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100vh",
+        backgroundColor: "rgb(33, 36, 38)",
+      }}
+    >
+      <CountdownInput />
     </div>
   );
 }
